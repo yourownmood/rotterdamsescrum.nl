@@ -3,3 +3,7 @@ deployment:
     branch: master
     commands:
       - ./runscripts/deploy-ghpages.sh
+
+test:
+  override:
+    - "true"
