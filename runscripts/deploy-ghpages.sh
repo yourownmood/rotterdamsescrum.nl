@@ -6,7 +6,7 @@ set -e
 # show where we are on the machine
 pwd
 remote=$(git config remote.origin.url)
-siteSource="site"
+siteSource="sites"
 
 # make a directory to put the gp-pages branch
 mkdir gh-pages-branch
