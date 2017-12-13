@@ -1,0 +1,66 @@
+// --------------------------------------------------
+// +++ COMPONENTS LOGO +++
+// --------------------------------------------------
+
+
+// === VARIABLES ===
+// --------------------------------------------------
+
+//
+
+// === BASE ===
+// --------------------------------------------------
+
+// LOGO
+
+.logo {
+  @include OpenSans-Regular();
+  display: block;
+}
+
+// === PARTS ===
+// --------------------------------------------------
+
+// HIGHLIGHT
+
+.logo__highlight {
+  display: inline-block;
+
+  padding: 2px 10px 5px;
+
+  background: $sc-white;
+
+  text-transform: lowercase;
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+// === OPTIONS ===
+// --------------------------------------------------
+
+// AMSTERDAMSE
+
+.logo--amsterdamse {
+  color: $sc-amsterdam;
+}
+
+// ROTTERDAMSE
+
+.logo--rotterdamse {
+  color: $sc-rotterdam;
+}
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: Logo
+components:
+  - Logo
+---
+
+
+*/

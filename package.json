@@ -1,0 +1,32 @@
+{
+  "name": "scrum",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:yourownmood/scrum.git",
+  "author": "Steven Bax <sbax@yourownmood.nl>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist/; yarn sass; yarn clean-css; yarn copy-assets",
+    "clean-css": "./node_modules/.bin/cleancss -o dist/styles/main-min.css dist/styles/main.css; cp dist/styles/main-min.css sites/styles/main-min.css",
+    "copy-assets": "rsync -av --exclude='styles' sites/ dist",
+    "mocha": "mocha **/*.spec.js",
+    "sass": "./node_modules/.bin/node-sass sites/styles/main.scss dist/styles/main.css;",
+    "stylelint": "stylelint 'sites/styles/**/*.scss' --config .stylelintrc",
+    "test": "yarn stylelint; yarn standard; yarn mocha;"
+  },
+  "dependencies": {
+    "inuitcss": "6.0.0-beta.5",
+    "sass-mq": "3.3.1"
+  },
+  "devDependencies": {
+    "clean-css": "3.4.21",
+    "husky": "0.13.3",
+    "mocha": "3.5.0",
+    "node-sass": "4.7.2",
+    "pre-push": "0.1.1",
+    "sassaby": "2.1.1",
+    "standard": "10.0.2",
+    "stylelint": "8.0.0",
+    "stylelint-order": "0.6.0"
+  }
+}

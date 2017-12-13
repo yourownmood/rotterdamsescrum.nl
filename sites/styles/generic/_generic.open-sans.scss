@@ -1,0 +1,30 @@
+// --------------------------------------------------
+// +++ GENERIC OPEN-SANS +++
+// --------------------------------------------------
+
+
+// === BASE ===
+// --------------------------------------------------
+
+// OPEN-SAN REGULAR
+
+@mixin OpenSans-Regular() {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: Open-sans
+generic:
+  - Open-sans
+---
+
+**Webfont:**
+https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans
+
+*/
