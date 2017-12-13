@@ -1,0 +1,59 @@
+// --------------------------------------------------
+// +++ SETTINGS COLORS +++
+// --------------------------------------------------
+
+
+// === BRAND COLORS ===
+// --------------------------------------------------
+
+// ROTTERDAMSE
+
+$sc-rotterdam: #2fb26a;
+
+// AMSTERDAM
+
+$sc-amsterdam: #ef4552;
+
+// WHITE
+
+$sc-white: #fff;
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: Colors
+settings:
+  - Colors
+hideCode: true
+---
+
+```html
+<div class="o-layout">
+  <div class="o-layout__item u-margin-bottom-small">
+    <h2 class="u-heading--regular">Brand colors:</h2>
+  </div>
+  <div class="o-layout__item o-layout__item--center u-1/4 u-margin-bottom-small">
+    <div style="background-color: #2fb26a; color:#fff; padding: 20px;" class="u-1/1">
+      <b>$sc-rotterdam</b>
+      <br>
+      <code>#2fb26a;</code>
+    </div>
+  </div>
+  <div class="o-layout__item o-layout__item--center u-1/4 u-margin-bottom-small">
+    <div style="background-color: #ef4552; color:#fff; padding: 20px;" class="u-1/1">
+      <b>$sc-amsterdam</b>
+      <br>
+      <code>#ef4552</code>
+    </div>
+  </div>
+  <div class="o-layout__item o-layout__item--center u-1/4 u-margin-bottom-small">
+    <div style="background-color: #fff; color:#000; padding: 20px;" class="u-1/1">
+      <b>$sc-white</b>
+      <br>
+      <code>#ffffff</code>
+    </div>
+  </div>
+</div>
+*/
