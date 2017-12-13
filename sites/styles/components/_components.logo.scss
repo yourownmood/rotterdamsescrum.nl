@@ -14,8 +14,21 @@
 // LOGO
 
 .logo {
+  display: inline-block;
+
   @include OpenSans-Regular();
-  display: block;
+
+  &:hover {
+    cursor: crosshair;
+
+    .logo__highlight {
+      border-color: $sc-white;
+
+      color: $sc-white;
+
+      box-shadow: inset 0 0 0 0 $sc-white;
+    }
+  }
 }
 
 // === PARTS ===
@@ -27,6 +40,12 @@
   display: inline-block;
 
   padding: 2px 10px 5px;
+
+  border-width: 1px;
+
+  transition: all ease 0.75s;
+
+  border-style: solid;
 
   background: $sc-white;
 
@@ -44,12 +63,32 @@
 
 .logo--amsterdamse {
   color: $sc-amsterdam;
+
+  .logo__highlight {
+    border-color: $sc-amsterdam;
+  }
+
+  &:hover {
+    .logo__highlight {
+      box-shadow: inset 500px 0 0 0 $sc-amsterdam;
+    }
+  }
 }
 
 // ROTTERDAMSE
 
 .logo--rotterdamse {
   color: $sc-rotterdam;
+
+  .logo__highlight {
+    border-color: $sc-rotterdam;
+  }
+
+  &:hover {
+    .logo__highlight {
+      box-shadow: inset 500px 0 0 0 $sc-rotterdam;
+    }
+  }
 }
 
 // === DOCS ===
@@ -62,5 +101,12 @@ components:
   - Logo
 ---
 
+```html
+<h1 class="logo logo--rotterdamse">
+  <span class="logo__highlight">Rotterdamse</span>
+  <br/>
+  <span class="logo__highlight">Scrum</span>
+</h1>
+```
 
 */
