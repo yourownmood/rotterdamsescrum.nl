@@ -1,0 +1,36 @@
+// ---------------------------------------------------
+// +++ UTILITIES BACKGROUND +++
+// --------------------------------------------------
+
+
+// === OPTIONS ===
+// --------------------------------------------------
+
+// BG-ROTTERDAMSE
+
+.u-bg--rotterdamse {
+  background-color: $sc-rotterdam;
+}
+
+// BG-AMSTERDAMSE
+
+.u-bg--amsterdamse {
+  background-color: $sc-amsterdam;
+}
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: Background
+utilities:
+  - Background
+---
+
+Background utility classes
+
+* `.u-bg--rotterdamse`
+* `.u-bg--amsterdamse`
+
+*/
